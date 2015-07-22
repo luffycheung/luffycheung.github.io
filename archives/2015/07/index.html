@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Archives: 2015/7 | LuffyCheung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/pure-min.css" type="text/css">
+  <link rel="stylesheet" href="/css/biture.css" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header">
+    <div class="wrap">
+  <div class="inner">
+    <a class="brand" href="/">LuffyCheung</a>
+    <a id="menu-toggle" href="#"><i class="fa fa-bars"></i></a>
+<ul class="nav-menu">
+
+
+    <li><a href="/">home</a></li>
+
+
+
+  <li><a href="#">dropdown menu</a>
+    <ul class="sub-menu">
+
+      <li><a href="//ostfm.diandian.com/fm/">google</a></li>
+
+      <li><a href="//yahoo.com/">yahoo</a></li>
+
+    </ul>
+  </li>
+
+
+</ul>
+
+<ul class="nav-menu ext-menu">
+
+
+    <li><a href="//github.com/luffycheung/">github</a></li>
+
+
+
+    <li><a href="//zespia.tw/hexo/">hexo</a></li>
+
+
+
+  <li><a href="#">theme</a>
+    <ul class="sub-menu">
+
+      <li><a href="//http://luffycheung.github.io/HTML5-jQuery-Music-Player">biture</a></li>
+
+    </ul>
+  </li>
+
+
+  <li><a class="various" href="#fbox-tagcloud">tags</a></li>
+</ul>
+</div>
+
+  </div>
+</div>
+
+<div class="tagcloud" id="fbox-tagcloud" style="margin:10px; display:none; overflow: hidden"></div>
+
+  </header>
+  <div id="main-content" class="wrap">
+  <div class="inner">
+    
+<!--<h4 class="archive-title">tag: 2015/7</h4>-->
+
+
+  <div class="archive">
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2015-07-22T15:07:01.000Z"><a href="/2015/07/22/hello-world/">2015-07-22</a></time>
+            
+              <h1 class="title"><a href="/2015/07/22/hello-world/">Hello World</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+  </div>
+
+
+
+  </div>
+  </div>
+  <footer id="footer">
+    <div class="wrap">
+  <div class="inner" style="text-align: center">
+    
+    &copy; 2015 John Doe All Rights Reserved
+    
+
+    / <a href="https://github.com/kywk/hexo-theme-biture">biture</a> for <a href="http://zespia.tw/hexo/">hexo</a>
+    / developed by <a href="http://kywk.github.io/moco/">MooCow (kywk)</a>.
+  </div>
+</div>
+
+  </footer>
+<!-- Le javascript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+<!-- Responsive menu -->
+<script>
+$(document).ready(function() {
+  $("#menu-toggle").click(function(event) {
+    event.preventDefault();
+    if ($(this).hasClass("isShow")) {
+      $("#header").css({position: "fixed"});
+      $("ul.nav-menu").hide();
+      $(this).removeClass("isShow");
+    } else {
+      $("#header").css({position: "static"});
+      $("ul.nav-menu").show();
+      $("html, body").scrollTop(0);
+      $(this).addClass("isShow");
+    }
+    return false;
+  });
+
+  $(window).resize(function() {
+    if ($(window).width() > 700) {
+      $("ul.nav-menu").removeAttr('style');
+    }
+  });
+
+});
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/package/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/package/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript">
+(function($){
+  $(".fancybox").fancybox();
+  $(".various").fancybox({
+    maxWidth  : 800,
+    maxHeight : 600,
+    fitToView : false,
+    width   : '70%',
+    height    : '70%',
+    autoSize  : true,
+    closeClick  : false,
+    openEffect  : 'none',
+    closeEffect : 'none'
+  });
+})(jQuery);
+</script>
+
+
+</body>
+</html>
