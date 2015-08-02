@@ -64,7 +64,7 @@ Add this plugin in your _co">
 Hexo中添加hexo-tag-spotify插件Installation1npm install hexo-tag-spotify --save
 Add this plugin in your _co">
 <meta property="og:image" content="http://srcqn.qiniudn.com/hexo_images/images//Spotify_AMV_album.png">
-<meta property="og:updated_time" content="2015-08-02T10:03:46.000Z">
+<meta property="og:updated_time" content="2015-08-02T10:44:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在Hexo博客中添加Spotify音乐">
 <meta name="twitter:description" content="Spotify账号注册
@@ -281,21 +281,35 @@ Add this plugin in your _co">
 <hr>
 <h1 id="Hexo中添加hexo-tag-spotify插件">Hexo中添加<a href="https://github.com/ivanovyordan/hexo-tag-spotify" target="_blank" rel="external">hexo-tag-spotify</a>插件</h1><h2 id="Installation">Installation</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-tag-spotify <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure>
 <p>Add this plugin in your _config.yml .<br><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># =====================================================</span></span><br><span class="line"><span class="preprocessor">##size</span></span><br><span class="line"><span class="preprocessor">#large (default)</span></span><br><span class="line"><span class="preprocessor">#compact</span></span><br><span class="line"><span class="preprocessor">#width&gt;x&lt;height&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">##theme</span></span><br><span class="line"><span class="preprocessor">#dark (default)</span></span><br><span class="line"><span class="preprocessor">#light</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">##view</span></span><br><span class="line"><span class="preprocessor">#list (default)</span></span><br><span class="line"><span class="preprocessor">#cover</span></span><br><span class="line">spotify:</span><br><span class="line">  size: <span class="string">'large'</span></span><br><span class="line">  theme: <span class="string">'light'</span></span><br><span class="line">  view: <span class="string">'list'</span></span><br><span class="line"><span class="preprocessor"># =====================================================</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="Usage">Usage</h2><h3 id="1-_Example_with_Spotify_URI:">1. Example with Spotify URI:</h3><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="preprocessor">%</span> spotify spotify:track:<span class="number">0</span>ZoOOxoA<span class="number">8</span><span class="preprocessor">o0</span>lY<span class="number">590</span>ivyM<span class="title">m4</span> <span class="preprocessor">%</span>&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="2-_Example_with_HTTP_link:">2. Example with HTTP link:</h3><figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="expression">&#123;% <span class="variable">spotify</span> <span class="variable">https</span>:/<span class="end-block">/play.spotify.com</span><span class="end-block">/user</span>/12132493<span class="end-block">/playlist</span>/1<span class="variable">kBmZZ</span>1<span class="variable">rW</span>2<span class="variable">Mq</span>2<span class="variable">jQdS</span>4<span class="variable">QclQ</span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
+<h2 id="Usage">Usage</h2><h3 id="1-_Example_with_Spotify_URI:（只支持单曲）">1. Example with Spotify URI:（只支持单曲）</h3><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="preprocessor">%</span> spotify spotify:track:<span class="number">0</span>ZoOOxoA<span class="number">8</span><span class="preprocessor">o0</span>lY<span class="number">590</span>ivyM<span class="title">m4</span> <span class="preprocessor">%</span>&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-_Example_with_HTTP_link:(支持单曲/专辑，推荐）">2. Example with HTTP link:(支持单曲/专辑，推荐）</h3><figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="expression">&#123;% <span class="variable">spotify</span> <span class="variable">https</span>:/<span class="end-block">/play.spotify.com</span><span class="end-block">/user</span>/12132493<span class="end-block">/playlist</span>/1<span class="variable">kBmZZ</span>1<span class="variable">rW</span>2<span class="variable">Mq</span>2<span class="variable">jQdS</span>4<span class="variable">QclQ</span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
 <hr>
-<h1 id="Demo">Demo</h1><img title="Spotify" alt="Spotify" class="class1" src="http://srcqn.qiniudn.com/hexo_images/images//Spotify_AMV_album.png">
+<h1 id="Demo">Demo</h1><p>目前内嵌的Spotify Widgets点击播放按键后会跳转到Spotify Web Player页面播放。。。</p>
+<h3 id="1-单曲">1.单曲</h3><table>
+<thead>
+<tr>
+<th><iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A3HUgrAdbtHYmmUnZ5UVYak" width="300" height="380" frameborder="0" allowtransparency="true" class="spotify"></iframe></th>
+<th style="text-align:right"><iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A2TUIWkKrqp4EmzRoMlKnLj" width="300" height="380" frameborder="0" allowtransparency="true" class="spotify"></iframe></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-专辑">2.专辑</h3><img title="Spotify" alt="Spotify" class="class1" src="http://srcqn.qiniudn.com/hexo_images/images//Spotify_AMV_album.png">
 <table>
 <thead>
 <tr>
-<th>One Piece AMV tracks</th>
-<th style="text-align:right">OST</th>
+<th><a href="https://play.spotify.com/user/11123992003/playlist/1mCJynQ7d4aTZMlskpfpKx" target="_blank" rel="external">One Piece AMV tracks</a></th>
+<th style="text-align:center"><a href="https://play.spotify.com/user/12132493/playlist/1kBmZZ1rW2Mq2jQdS4QclQ" target="_blank" rel="external">OST</a></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><iframe src="https://embed.spotify.com/?uri=https%3A%2F%2Fplay.spotify.com%2Fuser%2F11123992003%2Fplaylist%2F1mCJynQ7d4aTZMlskpfpKx" width="300" height="380" frameborder="0" allowtransparency="true" class="spotify"></iframe></td>
-<td style="text-align:right"><iframe src="https://embed.spotify.com/?uri=https%3A%2F%2Fplay.spotify.com%2Fuser%2F12132493%2Fplaylist%2F1kBmZZ1rW2Mq2jQdS4QclQ" width="300" height="380" frameborder="0" allowtransparency="true" class="spotify"></iframe></td>
+<td style="text-align:center"><iframe src="https://embed.spotify.com/?uri=https%3A%2F%2Fplay.spotify.com%2Fuser%2F12132493%2Fplaylist%2F1kBmZZ1rW2Mq2jQdS4QclQ" width="300" height="380" frameborder="0" allowtransparency="true" class="spotify"></iframe></td>
 </tr>
 </tbody>
 </table>
@@ -484,7 +498,7 @@ Add this plugin in your _co">
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spotify账号注册"><span class="nav-number">1.</span> <span class="nav-text">Spotify账号注册</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo中添加hexo-tag-spotify插件"><span class="nav-number">2.</span> <span class="nav-text">Hexo中添加hexo-tag-spotify插件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Installation"><span class="nav-number">2.1.</span> <span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">2.2.</span> <span class="nav-text">Usage</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-_Example_with_Spotify_URI:"><span class="nav-number">2.2.1.</span> <span class="nav-text">1. Example with Spotify URI:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-_Example_with_HTTP_link:"><span class="nav-number">2.2.2.</span> <span class="nav-text">2. Example with HTTP link:</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demo"><span class="nav-number">3.</span> <span class="nav-text">Demo</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spotify账号注册"><span class="nav-number">1.</span> <span class="nav-text">Spotify账号注册</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo中添加hexo-tag-spotify插件"><span class="nav-number">2.</span> <span class="nav-text">Hexo中添加hexo-tag-spotify插件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Installation"><span class="nav-number">2.1.</span> <span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">2.2.</span> <span class="nav-text">Usage</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-_Example_with_Spotify_URI:（只支持单曲）"><span class="nav-number">2.2.1.</span> <span class="nav-text">1. Example with Spotify URI:（只支持单曲）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-_Example_with_HTTP_link:(支持单曲/专辑，推荐）"><span class="nav-number">2.2.2.</span> <span class="nav-text">2. Example with HTTP link:(支持单曲/专辑，推荐）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demo"><span class="nav-number">3.</span> <span class="nav-text">Demo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-单曲"><span class="nav-number">3.0.1.</span> <span class="nav-text">1.单曲</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-专辑"><span class="nav-number">3.0.2.</span> <span class="nav-text">2.专辑</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
