@@ -199,7 +199,7 @@
           
             
               <a class="post-title-link" href="/2015/08/02/Add-Spotify-Music-to-Hexo-Blog/" itemprop="url">
-                Add Spotify Music to Hexo Blog
+                在Hexo博客中添加Spotify音乐
               </a>
             
           
@@ -247,12 +247,35 @@
 
       
         
-          <span itemprop="articleBody"><h1 id="Spotify账号注册">Spotify账号注册</h1><h3 id="1-自行FQ（VPN/Shadowsocks/GAE-)">1.自行FQ（VPN/Shadowsocks/GAE..)</h3><h3 id="2-注册Facebook账号，个人资料区域设置成us。">2.注册Facebook账号，个人资料区域设置成us。</h3><h3 id="3-使用Facebook账号登陆Spotify。">3.使用Facebook账号登陆<a href="https://accounts.spotify.com/en/login?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F" target="_blank" rel="external">Spotify</a>。</h3><h1 id="Hexo中添加hexo-tag-spotify插件">Hexo中添加<a href="https://github.com/ivanovyordan/hexo-tag-spotify" target="_blank" rel="external">hexo-tag-spotify</a>插件</h1><h2 id="Installation">Installation</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-tag-spotify --save</span><br></pre></td></tr></table></figure>
-<p>Add this plugin in your <figure class="highlight"><figcaption><span>.</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">``` bash&#10;    # =====================================================&#10;    ##size&#10;    #large (default)&#10;    #compact&#10;    #width&#62;x&#60;height&#62;&#10;&#10;    ##theme&#10;    #dark (default)&#10;    #light&#10;&#10;    ##view&#10;    #list (default)&#10;    #cover&#10;    spotify:&#10;      size: &#39;large&#39;&#10;      theme: &#39;light&#39;&#10;      view: &#39;list&#39;&#10;    # =====================================================</span><br></pre></td></tr></table></figure></p>
-<h2 id="Usage">Usage</h2><h3 id="1-_Example_with_Spotify_URI:">1. Example with Spotify URI:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% spotify spotify:track:<span class="number">0</span>ZoOOxoA8o0lY590ivyMm4 %&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="2-_Example_with_HTTP_link:">2. Example with HTTP link:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% spotify https://play.spotify.com/user/<span class="number">12132493</span>/playlist/<span class="number">1</span>kBmZZ1rW2Mq2jQdS4QclQ %&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="Demo">Demo</h1><img title="图片标题" alt="Spotify" class="class1" src="http://srcqn.qiniudn.com/hexo_images/images/images/Spotify_AMV_album.png">
-<h1 id="Spotify_One_Piece_AMV_tracks">Spotify One Piece AMV tracks</h1><iframe src="https://embed.spotify.com/?uri=https%3A%2F%2Fplay.spotify.com%2Fuser%2F11123992003%2Fplaylist%2F1mCJynQ7d4aTZMlskpfpKx&amp;theme=white" width="300" height="380" frameborder="0" allowtransparency="true" class="spotify"></iframe></span>
+          <span itemprop="articleBody"><h1 id="Spotify账号注册">Spotify账号注册</h1><blockquote>
+<ul>
+<li>1.自行FQ（VPN/Shadowsocks/GAE..)</li>
+<li>2.注册Facebook账号，个人资料区域设置成us。</li>
+<li>3.使用Facebook账号登陆<a href="https://accounts.spotify.com/en/login?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F" target="_blank" rel="external">Spotify</a>。</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="Hexo中添加hexo-tag-spotify插件">Hexo中添加<a href="https://github.com/ivanovyordan/hexo-tag-spotify" target="_blank" rel="external">hexo-tag-spotify</a>插件</h1><h2 id="Installation">Installation</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-tag-spotify <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure>
+<p>Add this plugin in your _config.yml .<br><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># =====================================================</span></span><br><span class="line"><span class="preprocessor">##size</span></span><br><span class="line"><span class="preprocessor">#large (default)</span></span><br><span class="line"><span class="preprocessor">#compact</span></span><br><span class="line"><span class="preprocessor">#width&gt;x&lt;height&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">##theme</span></span><br><span class="line"><span class="preprocessor">#dark (default)</span></span><br><span class="line"><span class="preprocessor">#light</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">##view</span></span><br><span class="line"><span class="preprocessor">#list (default)</span></span><br><span class="line"><span class="preprocessor">#cover</span></span><br><span class="line">spotify:</span><br><span class="line">  size: <span class="string">'large'</span></span><br><span class="line">  theme: <span class="string">'light'</span></span><br><span class="line">  view: <span class="string">'list'</span></span><br><span class="line"><span class="preprocessor"># =====================================================</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="Usage">Usage</h2><h3 id="1-_Example_with_Spotify_URI:">1. Example with Spotify URI:</h3><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="preprocessor">%</span> spotify spotify:track:<span class="number">0</span>ZoOOxoA<span class="number">8</span><span class="preprocessor">o0</span>lY<span class="number">590</span>ivyM<span class="title">m4</span> <span class="preprocessor">%</span>&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-_Example_with_HTTP_link:">2. Example with HTTP link:</h3><figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="expression">&#123;% <span class="variable">spotify</span> <span class="variable">https</span>:/<span class="end-block">/play.spotify.com</span><span class="end-block">/user</span>/12132493<span class="end-block">/playlist</span>/1<span class="variable">kBmZZ</span>1<span class="variable">rW</span>2<span class="variable">Mq</span>2<span class="variable">jQdS</span>4<span class="variable">QclQ</span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="Demo">Demo</h1><img title="图片标题" alt="Spotify" class="class1" src="http://srcqn.qiniudn.com/hexo_images/images//Spotify_AMV_album.png">
+<table>
+<thead>
+<tr>
+<th>One Piece AMV tracks</th>
+<th style="text-align:right">OST</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><iframe src="https://embed.spotify.com/?uri=https%3A%2F%2Fplay.spotify.com%2Fuser%2F11123992003%2Fplaylist%2F1mCJynQ7d4aTZMlskpfpKx&amp;theme=white" width="300" height="380" frameborder="0" allowtransparency="true" class="spotify"></iframe></td>
+<td style="text-align:right"><iframe src="https://embed.spotify.com/?uri=https%3A%2F%2Fplay.spotify.com%2Fuser%2F12132493%2Fplaylist%2F1kBmZZ1rW2Mq2jQdS4QclQ&amp;theme=white" width="300" height="380" frameborder="0" allowtransparency="true" class="spotify"></iframe></td>
+</tr>
+</tbody>
+</table>
+</span>
         
       
     </div>
