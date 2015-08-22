@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[LuffyCheung]]></title>
+  <subtitle><![CDATA[关注移动互联网、移动物联网]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2015-08-21T16:02:02.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name><![CDATA[Luffy Cheung]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[在Hexo博客中添加HTML5视频]]></title>
+    <link href="http://yoursite.com/2015/08/20/H5-Video-Test/"/>
+    <id>http://yoursite.com/2015/08/20/H5-Video-Test/</id>
+    <published>2015-08-20T08:16:29.000Z</published>
+    <updated>2015-08-21T16:02:02.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="使用方法">使用方法</h1><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="tag">video</span> src=<span class="string">'视频外链地址.mp4'</span> type=<span class="string">'video/mp4'</span> controls=<span class="string">'controls'</span>  <span class="attribute">width</span>=<span class="string">'100%'</span> <span class="attribute">height</span>=<span class="string">'100%'</span>&gt;</span><br><span class="line">&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="七牛外链视频">七牛外链视频</h2><p> <video src="http://luffycheung.qiniudn.com/VID_39650505_044654.mp4" type="video/mp4" id="item_frame" controls="controls" class="is-full-frame is-html5-video html5-player" width="100%" height="100%"></video><br> @江滨公园（柳州）</p>
+<h2 id="其他网盘外链">其他网盘外链</h2><p> <video controls="controls" name="media"><source src="http://cdn.dropmark.com/13957/7383fc262112131b699349e9eb97c7e6be4513b4/OnePiece%20Kungfu%20iPod.mp4" type="video/mp4" width="100%" height="100%"></video><br> 功夫海贼王</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="使用方法">使用方法</h1><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line"]]>
+    </summary>
+    
+      <category term="AMV" scheme="http://yoursite.com/tags/AMV/"/>
+    
+      <category term="HTML5" scheme="http://yoursite.com/tags/HTML5/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+      <category term="Video" scheme="http://yoursite.com/categories/Hexo/Video/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[在Hexo博客中添加Spotify音乐]]></title>
+    <link href="http://yoursite.com/2015/08/02/Add-Spotify-Music-to-Hexo-Blog/"/>
+    <id>http://yoursite.com/2015/08/02/Add-Spotify-Music-to-Hexo-Blog/</id>
+    <published>2015-08-02T09:34:44.000Z</published>
+    <updated>2015-08-02T14:04:03.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="Spotify账号注册">Spotify账号注册</h1><blockquote>
+<ul>
+<li>1.自行FQ（VPN/Shadowsocks/GAE..)</li>
+<li>2.注册Facebook账号，个人资料区域设置成us。</li>
+<li>3.使用Facebook账号登陆<a href="https://accounts.spotify.com/en/login?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F" target="_blank" rel="external">Spotify</a>。</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="Hexo中添加hexo-tag-spotify插件">Hexo中添加<a href="https://github.com/ivanovyordan/hexo-tag-spotify" target="_blank" rel="external">hexo-tag-spotify</a>插件</h1><h2 id="Installation">Installation</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-tag-spotify <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure>
+<p>Add this plugin in your _config.yml .<br><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">plugins:</span><br><span class="line"> - hexo-tag-spotify</span><br><span class="line"><span class="preprocessor"># =====================================================</span></span><br><span class="line"><span class="preprocessor">##size</span></span><br><span class="line"><span class="preprocessor">#large (default)</span></span><br><span class="line"><span class="preprocessor">#compact</span></span><br><span class="line"><span class="preprocessor">#width&gt;x&lt;height&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">##theme</span></span><br><span class="line"><span class="preprocessor">#dark (default)</span></span><br><span class="line"><span class="preprocessor">#light</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">##view</span></span><br><span class="line"><span class="preprocessor">#list (default)</span></span><br><span class="line"><span class="preprocessor">#cover</span></span><br><span class="line">spotify:</span><br><span class="line">  size: <span class="string">'large'</span></span><br><span class="line">  theme: <span class="string">'light'</span></span><br><span class="line">  view: <span class="string">'list'</span></span><br><span class="line"><span class="preprocessor"># =====================================================</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="Usage">Usage</h2><h3 id="1-_Example_with_Spotify_URI:（只支持单曲）">1. Example with Spotify URI:（只支持单曲）</h3><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="preprocessor">%</span> spotify spotify:track:<span class="number">0</span>ZoOOxoA<span class="number">8</span><span class="preprocessor">o0</span>lY<span class="number">590</span>ivyM<span class="title">m4</span> <span class="preprocessor">%</span>&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-_Example_with_HTTP_link:(支持单曲/专辑/播放列表，推荐）">2. Example with HTTP link:(支持单曲/专辑/播放列表，推荐）</h3><figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="expression">&#123;% <span class="variable">spotify</span> <span class="variable">https</span>:/<span class="end-block">/play.spotify.com</span><span class="end-block">/user</span>/12132493<span class="end-block">/playlist</span>/1<span class="variable">kBmZZ</span>1<span class="variable">rW</span>2<span class="variable">Mq</span>2<span class="variable">jQdS</span>4<span class="variable">QclQ</span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="Demo">Demo</h1><p>目前内嵌的Spotify Widgets点击播放按键后会跳转到Spotify Web Player页面播放。。。</p>
+<h3 id="1-单曲">1.单曲</h3><table>
+<thead>
+<tr>
+<th><iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A3HUgrAdbtHYmmUnZ5UVYak" width="300" height="380" frameborder="0" allowtransparency="true" class="spotify"></iframe></th>
+<th style="text-align:right"><iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A2TUIWkKrqp4EmzRoMlKnLj" width="300" height="380" frameborder="0" allowtransparency="true" class="spotify"></iframe></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-专辑">2.专辑</h3><img title="Spotify" alt="Spotify" class="class1" src="http://srcqn.qiniudn.com/hexo_images/images//Spotify_AMV_album.png">
+<table>
+<thead>
+<tr>
+<th><a href="https://play.spotify.com/user/11123992003/playlist/1mCJynQ7d4aTZMlskpfpKx" target="_blank" rel="external">One Piece AMV tracks</a></th>
+<th style="text-align:center"><a href="https://play.spotify.com/user/12132493/playlist/1kBmZZ1rW2Mq2jQdS4QclQ" target="_blank" rel="external">OST</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><iframe src="https://embed.spotify.com/?uri=https%3A%2F%2Fplay.spotify.com%2Fuser%2F11123992003%2Fplaylist%2F1mCJynQ7d4aTZMlskpfpKx" width="300" height="380" frameborder="0" allowtransparency="true" class="spotify"></iframe></td>
+<td style="text-align:center"><iframe src="https://embed.spotify.com/?uri=https%3A%2F%2Fplay.spotify.com%2Fuser%2F12132493%2Fplaylist%2F1kBmZZ1rW2Mq2jQdS4QclQ" width="300" height="380" frameborder="0" allowtransparency="true" class="spotify"></iframe></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="Spotify账号注册">Spotify账号注册</h1><blockquote>
+<ul>
+<li>1.自行FQ（VPN/Shadowsocks/GAE..)</li>
+<li>2.注册Facebook账号，个人资料区域设置成us。</li>
+<li>3.使用F]]>
+    </summary>
+    
+      <category term="AMV" scheme="http://yoursite.com/tags/AMV/"/>
+    
+      <category term="Spotify" scheme="http://yoursite.com/tags/Spotify/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[N年没传歌了，给FM单独建了个page页面 地址： http...]]></title>
+    <link href="http://yoursite.com/2015/07/25/N%E5%B9%B4%E6%B2%A1%E4%BC%A0%E6%AD%8C%E4%BA%86%EF%BC%8C%E7%BB%99FM%E5%8D%95%E7%8B%AC%E5%BB%BA%E4%BA%86%E4%B8%AApage%E9%A1%B5%E9%9D%A2-%E5%9C%B0%E5%9D%80%EF%BC%9A-http/"/>
+    <id>http://yoursite.com/2015/07/25/N年没传歌了，给FM单独建了个page页面-地址：-http/</id>
+    <published>2015-07-25T15:16:20.000Z</published>
+    <updated>2015-07-26T13:31:27.000Z</updated>
+    <content type="html"><![CDATA[<p>N年没传歌了，给FM单独建了个page页面<br>地址：<a href="http://luffycheung.github.io/dplus/" target="_blank" rel="external">http://luffycheung.github.io/dplus/</a><br><br>还有个之前建的：<a href="http://luffycheung.github.io/HTML5-jQuery-Music-Player/" target="_blank" rel="external">http://luffycheung.github.io/HTML5-jQuery-Music-Player/</a><br><br>以此纪念下还没停止服务的点点音乐<br></p>
+
+<p><img src="http://m1.img.srcdd.com/farm5/d/2015/0725/23/41DCE5E19D92364ECAE022948D6724C4_B500_900_500_246.jpeg" alt=""></p>
+<p><img src="http://m3.img.srcdd.com/farm5/d/2015/0725/23/B776FECB2694D4C51B3903670CE42E20_B500_900_500_246.jpeg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>N年没传歌了，给FM单独建了个page页面<br>地址：<a href="http://luffycheung.github.io/dplus/" target="_blank" rel="external">http://luffycheung.github.io/dpl]]>
+    </summary>
+    
+      <category term="点点" scheme="http://yoursite.com/tags/%E7%82%B9%E7%82%B9/"/>
+    
+      <category term="点点迁移" scheme="http://yoursite.com/categories/%E7%82%B9%E7%82%B9%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Apartment Therapy - Patrícia on Behance]]></title>
+    <link href="http://yoursite.com/2015/07/25/Apartment-Therapy-Patricia-on-Behance/"/>
+    <id>http://yoursite.com/2015/07/25/Apartment-Therapy-Patricia-on-Behance/</id>
+    <published>2015-07-25T15:16:06.000Z</published>
+    <updated>2015-07-26T13:40:32.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://m3.img.srcdd.com/farm4/d/2015/0724/11/20AD9AD0D9EE11722F0B4976AE638B38_B500_900_500_333.jpeg" alt=""><br><a id="more"></a><br><img src="http://m3.img.srcdd.com/farm4/d/2015/0724/11/ECE7D8A1377DDAA6BFD3B83AC7AE58E4_B500_900_500_333.jpeg" alt=""></p>
+<p><img src="http://m3.img.srcdd.com/farm5/d/2015/0724/11/0F16A955310843C9DB71FD825545B36E_B500_900_500_750.jpeg" alt=""></p>
+<p><img src="http://m3.img.srcdd.com/farm5/d/2015/0724/11/667D4B8C95BB125365F7A2322EC997A4_B500_900_500_750.jpeg" alt=""></p>
+<p><img src="http://m3.img.srcdd.com/farm5/d/2015/0724/11/119A3CBF49AB209400892FFC7DCE024A_B500_900_500_333.jpeg" alt=""></p>
+<p><img src="http://m3.img.srcdd.com/farm5/d/2015/0724/11/744EB1DA479D680C6C9C7FD0B2F14113_B500_900_500_333.jpeg" alt=""></p>
+<p><img src="http://m1.img.srcdd.com/farm4/d/2015/0724/11/75346C1C6C037EE120B4777E4F1FD913_B500_900_500_750.jpeg" alt=""></p>
+<p><img src="http://m3.img.srcdd.com/farm5/d/2015/0724/11/993B08D82C93AD28F12164517101C94A_B500_900_500_750.jpeg" alt=""></p>
+<p><img src="http://m1.img.srcdd.com/farm5/d/2015/0724/11/C1F2BE9BE63D33F173EA7C151C01A3E0_B500_900_500_333.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0724/11/D6960D206307D0D48EA8800BDAAFE054_B500_900_500_750.jpeg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://m3.img.srcdd.com/farm4/d/2015/0724/11/20AD9AD0D9EE11722F0B4976AE638B38_B500_900_500_333.jpeg" alt=""><br>]]>
+    
+    </summary>
+    
+      <category term="点点" scheme="http://yoursite.com/tags/%E7%82%B9%E7%82%B9/"/>
+    
+      <category term="点点迁移" scheme="http://yoursite.com/categories/%E7%82%B9%E7%82%B9%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[B站 新世界空间背景]]></title>
+    <link href="http://yoursite.com/2015/07/15/B%E7%AB%99-%E6%96%B0%E4%B8%96%E7%95%8C%E7%A9%BA%E9%97%B4%E8%83%8C%E6%99%AF/"/>
+    <id>http://yoursite.com/2015/07/15/B站-新世界空间背景/</id>
+    <published>2015-07-15T14:25:45.000Z</published>
+    <updated>2015-07-26T13:32:37.000Z</updated>
+    <content type="html"><![CDATA[<p>B站 新世界空间背景<br></p>
+
+<p><img src="http://m3.img.srcdd.com/farm4/d/2015/0715/22/8528BA14AF53EF07136F2FFA21763D6F_B500_900_500_186.jpeg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>B站 新世界空间背景<br></p>
+
+<p><img src="http://m3.img.srcdd.com/farm4/d/2015/0715/22/8528BA14AF53EF07136F2FFA21763D6F_B500_900_500_186.jpeg" alt]]>
+    </summary>
+    
+      <category term="点点" scheme="http://yoursite.com/tags/%E7%82%B9%E7%82%B9/"/>
+    
+      <category term="点点迁移" scheme="http://yoursite.com/categories/%E7%82%B9%E7%82%B9%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Anime Expo 2015 AMV Contest (all videos) - YouTube]]></title>
+    <link href="http://yoursite.com/2015/07/10/Anime-Expo-2015-AMV-Contest-all-videos-YouTube/"/>
+    <id>http://yoursite.com/2015/07/10/Anime-Expo-2015-AMV-Contest-all-videos-YouTube/</id>
+    <published>2015-07-10T14:56:18.000Z</published>
+    <updated>2015-07-26T13:36:28.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="https://www.youtube.com/playlist?list=PL3GzAOFC9VCcs4216YZIGSLbLS9T4aBPm" target="_blank" rel="external">https://www.youtube.com/playlist?list=PL3GzAOFC9VCcs4216YZIGSLbLS9T4aBPm</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="https://www.youtube.com/playlist?list=PL3GzAOFC9VCcs4216YZIGSLbLS9T4aBPm" target="_blank" rel="external">https://www.youtube.com]]>
+    </summary>
+    
+      <category term="点点" scheme="http://yoursite.com/tags/%E7%82%B9%E7%82%B9/"/>
+    
+      <category term="点点迁移" scheme="http://yoursite.com/categories/%E7%82%B9%E7%82%B9%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[左耳_PPTV聚力-始终和你同一频道]]></title>
+    <link href="http://yoursite.com/2015/06/07/%E5%B7%A6%E8%80%B3-PPTV%E8%81%9A%E5%8A%9B-%E5%A7%8B%E7%BB%88%E5%92%8C%E4%BD%A0%E5%90%8C%E4%B8%80%E9%A2%91%E9%81%93/"/>
+    <id>http://yoursite.com/2015/06/07/左耳-PPTV聚力-始终和你同一频道/</id>
+    <published>2015-06-07T03:33:12.000Z</published>
+    <updated>2015-07-26T13:35:02.000Z</updated>
+    <content type="html"><![CDATA[<p>左耳_PPTV聚力-始终和你同一频道<br></p>
+
+<p><img src="http://m1.img.srcdd.com/farm5/d/2015/0607/03/1BA3F2C5C3949118AE594D023FB91B07_B500_900_225_300.jpeg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>左耳_PPTV聚力-始终和你同一频道<br></p>
+
+<p><img src="http://m1.img.srcdd.com/farm5/d/2015/0607/03/1BA3F2C5C3949118AE594D023FB91B07_B500_900_225_300.j]]>
+    </summary>
+    
+      <category term="点点" scheme="http://yoursite.com/tags/%E7%82%B9%E7%82%B9/"/>
+    
+      <category term="点点迁移" scheme="http://yoursite.com/categories/%E7%82%B9%E7%82%B9%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[多一点家居创意 多一点生活微笑]]></title>
+    <link href="http://yoursite.com/2015/06/04/%E5%A4%9A%E4%B8%80%E7%82%B9%E5%AE%B6%E5%B1%85%E5%88%9B%E6%84%8F-%E5%A4%9A%E4%B8%80%E7%82%B9%E7%94%9F%E6%B4%BB%E5%BE%AE%E7%AC%91/"/>
+    <id>http://yoursite.com/2015/06/04/多一点家居创意-多一点生活微笑/</id>
+    <published>2015-06-04T13:57:04.000Z</published>
+    <updated>2015-07-26T13:40:46.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://m3.img.srcdd.com/farm5/d/2015/0604/17/48A422491E0EB8C7A4A2ED7FC30B2E49_B500_900_500_540.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0604/17/7EA93286568BCC473806836AB824186C_B500_900_500_492.jpeg" alt=""></p>
+<a id="more"></a>
+<p><img src="http://m3.img.srcdd.com/farm4/d/2015/0604/17/5A4765868A4A0820B0736C2E7700DE0A_B500_900_500_561.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0604/17/148E1C24AABAC8512302DA37DAAD585F_B500_900_500_332.jpeg" alt=""></p>
+<p><img src="http://m1.img.srcdd.com/farm4/d/2015/0604/17/5134EB40B2F04F8ADB2484326A5046CE_B500_900_500_500.jpeg" alt=""></p>
+<p><img src="http://m1.img.srcdd.com/farm4/d/2015/0604/17/E96EB01E650D87D2E09374719CF65CC4_B500_900_500_375.jpeg" alt=""></p>
+<p><img src="http://m3.img.srcdd.com/farm4/d/2015/0604/17/3E64CE0452675D2B1AD4AE8D0BD68AE5_B500_900_500_275.jpeg" alt=""></p>
+<p><img src="http://m1.img.srcdd.com/farm5/d/2015/0604/17/98C5FC995C864F9B0C347BC02F6BC129_B500_900_500_382.jpeg" alt=""></p>
+<p><img src="http://m3.img.srcdd.com/farm5/d/2015/0604/17/77F98B6B81C100C1FBD700D3B1E093C0_B500_900_500_480.jpeg" alt=""></p>
+<p><img src="http://m1.img.srcdd.com/farm4/d/2015/0604/17/E2611A52A576AA7A961793357BC74DB4_B500_900_500_318.jpeg" alt=""></p>
+<p><img src="http://m3.img.srcdd.com/farm5/d/2015/0604/17/961B937F5F001FDDDF52AF28F4E1B4B8_B500_900_500_472.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0604/17/6C59A60D74345C5F3FA97F3E13C17710_B500_900_500_632.jpeg" alt=""></p>
+<p><img src="http://m1.img.srcdd.com/farm5/d/2015/0604/17/0C2186017F686E795C8F6AA513BF7F54_B500_900_500_326.jpeg" alt=""></p>
+<p><img src="http://m3.img.srcdd.com/farm5/d/2015/0604/17/51ECA6DC088347DCD770CB51354BC3A6_B500_900_500_593.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm4/d/2015/0604/17/AFF15A07D06DD78A1DDAF2C52FEA392A_B500_900_500_350.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0604/17/C0C4DE72962C579C9FCC863FD4D3CCC6_B500_900_500_509.jpeg" alt=""></p>
+<p><img src="http://m1.img.srcdd.com/farm5/d/2015/0604/17/E8602F693EFFF5EEDDAA1A34E350A3BC_B500_900_500_544.jpeg" alt=""></p>
+<p><img src="http://m1.img.srcdd.com/farm4/d/2015/0604/17/689CA145F3BE4A2A5B0F9B02CE44626D_B500_900_500_587.jpeg" alt=""></p>
+<p><img src="http://m1.img.srcdd.com/farm5/d/2015/0604/17/56C05081075B48E131BF81E69F35E3C4_B500_900_500_280.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm4/d/2015/0604/17/B65CE3CAE8D7D13449692E7A1E202F1A_B500_900_500_456.jpeg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://m3.img.srcdd.com/farm5/d/2015/0604/17/48A422491E0EB8C7A4A2ED7FC30B2E49_B500_900_500_540.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0604/17/7EA93286568BCC473806836AB824186C_B500_900_500_492.jpeg" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="点点" scheme="http://yoursite.com/tags/%E7%82%B9%E7%82%B9/"/>
+    
+      <category term="点点迁移" scheme="http://yoursite.com/categories/%E7%82%B9%E7%82%B9%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[DES 网络索引 :    焦虑就是浪费时间，它不会改变任...]]></title>
+    <link href="http://yoursite.com/2015/05/24/DES-%E7%BD%91%E7%BB%9C%E7%B4%A2%E5%BC%95-%E7%84%A6%E8%99%91%E5%B0%B1%E6%98%AF%E6%B5%AA%E8%B4%B9%E6%97%B6%E9%97%B4%EF%BC%8C%E5%AE%83%E4%B8%8D%E4%BC%9A%E6%94%B9%E5%8F%98%E4%BB%BB/"/>
+    <id>http://yoursite.com/2015/05/24/DES-网络索引-焦虑就是浪费时间，它不会改变任/</id>
+    <published>2015-05-24T10:25:54.000Z</published>
+    <updated>2015-07-26T13:33:25.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://desshop.diandian.com/post/2015-05-23/40066402824" target="_blank" rel="external">DES 网络索引</a>:<br>&gt; 焦虑就是浪费时间，它不会改变任何事，只能搅乱你的脑袋，偷走你的快乐 。</p>
+
+<p><img src="http://m2.img.srcdd.com/farm4/d/2015/0523/23/5716F84853C6714152B941C340102E41_B500_900_wecda_440_440.jpeg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://desshop.diandian.com/post/2015-05-23/40066402824" target="_blank" rel="external">DES 网络索引</a>:<br>&gt; 焦虑就是浪费时间，它不会改变任何事，]]>
+    </summary>
+    
+      <category term="点点" scheme="http://yoursite.com/tags/%E7%82%B9%E7%82%B9/"/>
+    
+      <category term="点点迁移" scheme="http://yoursite.com/categories/%E7%82%B9%E7%82%B9%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[转国服了，服务器也会时不时的大姨妈  打大秘境后被...]]></title>
+    <link href="http://yoursite.com/2015/05/17/%E8%BD%AC%E5%9B%BD%E6%9C%8D%E4%BA%86%EF%BC%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%9F%E4%BC%9A%E6%97%B6%E4%B8%8D%E6%97%B6%E7%9A%84%E5%A4%A7%E5%A7%A8%E5%A6%88-%E6%89%93%E5%A4%A7%E7%A7%98%E5%A2%83%E5%90%8E%E8%A2%AB/"/>
+    <id>http://yoursite.com/2015/05/17/转国服了，服务器也会时不时的大姨妈-打大秘境后被/</id>
+    <published>2015-05-17T08:22:59.000Z</published>
+    <updated>2015-07-26T13:34:48.000Z</updated>
+    <content type="html"><![CDATA[<p>转国服了，服务器也会时不时的大姨妈<br><br>打大秘境后被爆衣了。。<br></p>
+
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0517/16/4F0CEA7C95C3633D28FF9BB9ACA1A8AB_B500_900_500_281.jpeg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>转国服了，服务器也会时不时的大姨妈<br><br>打大秘境后被爆衣了。。<br></p>
+
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0517/16/4F0CEA7C95C3633D28FF9BB9ACA1A8AB_]]>
+    </summary>
+    
+      <category term="点点" scheme="http://yoursite.com/tags/%E7%82%B9%E7%82%B9/"/>
+    
+      <category term="点点迁移" scheme="http://yoursite.com/categories/%E7%82%B9%E7%82%B9%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[心灵插画馆 :    Regition概念动漫人物插画作品]]></title>
+    <link href="http://yoursite.com/2015/04/30/%E5%BF%83%E7%81%B5%E6%8F%92%E7%94%BB%E9%A6%86-Regition%E6%A6%82%E5%BF%B5%E5%8A%A8%E6%BC%AB%E4%BA%BA%E7%89%A9%E6%8F%92%E7%94%BB%E4%BD%9C%E5%93%81/"/>
+    <id>http://yoursite.com/2015/04/30/心灵插画馆-Regition概念动漫人物插画作品/</id>
+    <published>2015-04-30T13:45:11.000Z</published>
+    <updated>2015-07-26T13:40:42.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://chahuaguan.diandian.com/post/2015-04-28/40066261446" target="_blank" rel="external">心灵插画馆</a>:<br>&gt; # Regition概念动漫人物插画作品</p>
+
+<p><img src="http://m1.img.srcdd.com/farm4/d/2015/0428/16/CAA33B7D4B185758C90F795445CA6A68_B500_900_500_353.jpeg" alt=""><br><a id="more"></a><br><img src="http://m1.img.srcdd.com/farm4/d/2015/0428/16/FB612074B0E5FDCC93CDFED57D7D245B_B500_900_500_706.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm4/d/2015/0428/16/D164940C63166416DF4445CCBBF335A1_B500_900_500_706.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm4/d/2015/0428/16/4727C4D914A10B2D4B3FDB37E47FC7DC_B500_900_500_296.jpeg" alt=""></p>
+<p><img src="http://m3.img.srcdd.com/farm4/d/2015/0428/16/E313A420AA909A181BA2D71CF8D1866F_B500_900_500_838.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0428/16/C6DB65C65CB5306299E8C5302A1B2FB7_B500_900_500_706.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0428/16/B8DB4A0CF9B322F84A2D08DBC8649A9F_B500_900_500_706.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0428/16/BD329B0BD706611EE37E1DE804A2A06D_B500_900_500_775.jpeg" alt=""></p>
+<p><img src="http://m3.img.srcdd.com/farm5/d/2015/0428/16/41DDAFB2359A50078CFE17E28D866A07_B500_900_500_1110.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0428/16/6D18D4D44327BCEE49630867C2940009_B500_900_500_1111.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0428/16/1CF78CA243A59741606B4A8478DF417D_B500_900_500_1111.jpeg" alt=""></p>
+<p><img src="http://m2.img.srcdd.com/farm5/d/2015/0428/16/E33FCC5D65A6D2E5A133EE18ECDE5212_B500_900_500_1111.jpeg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://chahuaguan.diandian.com/post/2015-04-28/40066261446">心灵插画馆</a>:<br>&gt; # Regition概念动漫人物插画作品</p>
+
+<p><img src="http://m1.img.srcdd.com/farm4/d/2015/0428/16/CAA33B7D4B185758C90F795445CA6A68_B500_900_500_353.jpeg" alt=""><br>]]>
+    
+    </summary>
+    
+      <category term="点点" scheme="http://yoursite.com/tags/%E7%82%B9%E7%82%B9/"/>
+    
+      <category term="点点迁移" scheme="http://yoursite.com/categories/%E7%82%B9%E7%82%B9%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+</feed>
