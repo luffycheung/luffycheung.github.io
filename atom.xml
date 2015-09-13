@@ -4,7 +4,7 @@
   <subtitle><![CDATA[关注移动互联网、移动物联网]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://luffycheung.com/"/>
-  <updated>2015-08-21T16:02:02.000Z</updated>
+  <updated>2015-09-13T14:19:38.000Z</updated>
   <id>http://luffycheung.com/</id>
   
   <author>
@@ -13,6 +13,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[post]]></title>
+    <link href="http://luffycheung.com/2015/09/13/MAD%20MAX%20/"/>
+    <id>http://luffycheung.com/2015/09/13/MAD MAX /</id>
+    <published>2015-09-13T14:14:34.000Z</published>
+    <updated>2015-09-13T14:19:38.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="电影推荐——《疯狂的麦克斯4：狂暴之路》">电影推荐——《疯狂的麦克斯4：狂暴之路》</h1><hr>
+<p><img src="http://srcqn.qiniudn.com/hexo_images/images/MADMAXxOnePiecejpg.jpg" alt=""><br>@<a href="https://twitter.com/takumitoxin" target="_blank" rel="external">takumitoxin</a><br>前两天买了个<strong>无线移动硬盘</strong>，支持百度云下载。下了几部电椅来看，今天看完了《疯狂的麦克斯4：狂暴之路》。今年6月份上映的，视觉特效和音效超赞，国内影院要是有IMAX 3D版强烈推荐去电影院看下。</p>
+<p><a href="http://movie.douban.com/subject/3592854/" target="_blank" rel="external">豆瓣</a><br>截图：</p>
+<p>男主:汤姆·哈迪<br><img src="http://srcqn.qiniudn.com/hexo_images/images/Tom%20Hardy.jpg" alt=""><br>女主：<br><img src="http://srcqn.qiniudn.com/hexo_images/images/Charlize%20Theron.jpg" alt=""></p>
+<p>剧中战争男孩的角色NUX是由<strong>尼古拉斯·霍尔特</strong>（英剧《Skins》男主角Tony）扮演<br><img src="http://srcqn.qiniudn.com/hexo_images/images/NUX.jpg" alt="NUX"><br><img src="http://vignette3.wikia.nocookie.net/roadwarrior/images/c/c4/Ss-mad-max-fury-road-118.jpg" alt="NUX"></p>
+<p>不死老乔（BOSS）：<br><img src="http://srcqn.qiniudn.com/hexo_images/images/Immorta-Joe.png" alt=""><br>摇滚吉他手：<br><img src="http://srcqn.qiniudn.com/hexo_images/images/Rock-Guy.jpg" alt=""><br>剧情就不透露了，剧中的这段台词很喜欢：<br><blockquote><p>你知道吗，抱着希望本身就是个错误。如果你没法改变现状，你就只能被现实打败。</p>
+</blockquote><br><img src="http://srcqn.qiniudn.com/hexo_images/images/Mad-Max-collage.jpg" alt="cmd-markdown-logo"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="电影推荐——《疯狂的麦克斯4：狂暴之路》">电影推荐——《疯狂的麦克斯4：狂暴之路》</h1><hr>
+<p><img src="http://srcqn.qiniudn.com/hexo_images/images/MADMAXxOnePiecejpg.jpg"]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[在Hexo博客中添加HTML5视频]]></title>
