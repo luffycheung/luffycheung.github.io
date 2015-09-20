@@ -4,7 +4,7 @@
   <subtitle><![CDATA[关注移动互联网、移动物联网]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://luffycheung.com/"/>
-  <updated>2015-09-13T14:36:35.000Z</updated>
+  <updated>2015-09-20T12:02:28.000Z</updated>
   <id>http://luffycheung.com/</id>
   
   <author>
@@ -13,6 +13,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[网易云音乐歌单 - Spotify Running Playlists]]></title>
+    <link href="http://luffycheung.com/2015/09/20/Spotify-Running-Playlists-163/"/>
+    <id>http://luffycheung.com/2015/09/20/Spotify-Running-Playlists-163/</id>
+    <published>2015-09-20T10:55:17.000Z</published>
+    <updated>2015-09-20T12:02:28.000Z</updated>
+    <content type="html"><![CDATA[<hr>
+<p>用网易云音乐创建了个专门收集Spotify上的Running Song的<a href="http://music.163.com/#/playlist?id=108434251" target="_blank" rel="external">歌单</a>。<br>曲风：电子/EDM/摇滚/EPIC</p>
+<p><img src="http://imglf1.nosdn.127.net/img/U2dscFZtbVNEY2JNRXdEUTJ0Rk9saXB3V1Bnb1VUeEczYzEvTm04UjBXeGRWbEozb2xYdGxRPT0.jpg" alt=""></p>
+<p>Running</p>
+<p>Every song matches your tempo,</p>
+<p>every beat drives you on.</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="http://music.163.com/outchain/player?type=0&id=108434251&auto=1&height=430"></iframe>]]></content>
+    <summary type="html">
+    <![CDATA[<hr>
+<p>用网易云音乐创建了个专门收集Spotify上的Running Song的<a href="http://music.163.com/#/playlist?id=108434251" target="_blank" rel="external">歌单</a>。<br]]>
+    </summary>
+    
+      <category term="Running" scheme="http://luffycheung.com/tags/Running/"/>
+    
+      <category term="Spotify" scheme="http://luffycheung.com/tags/Spotify/"/>
+    
+      <category term="跑步" scheme="http://luffycheung.com/tags/%E8%B7%91%E6%AD%A5/"/>
+    
+      <category term="音乐" scheme="http://luffycheung.com/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+      <category term="Music" scheme="http://luffycheung.com/categories/Music/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[电影推荐——《疯狂的麦克斯4：狂暴之路》]]></title>
